@@ -14,7 +14,7 @@ with simulated metadata to demonstrate the intended workflow. Then, it runs the 
 classifying the image as either containing a pothole or not containing a pothole. Then, it 
 grabs the metadata (if available) from the image, and finally, writes the results to a 
 report file, giving GPS location, confidence, the date taken, and a notification. 
-An image simulating this process will be attached.
+A demonstration of this process will be included below.
 
 
 ## Limitations:
@@ -22,19 +22,20 @@ This model achieved **94% accuracy on the test set**. Despite the high overall a
 examining some false-negative and false-positive predictions with Grad-CAM revealed interesting
 findings. We can see that the underlying environment plays a huge factor in its decision-making.
 
-For example, one false-positive prediction occured on an image containing a shadow, where the model
+For example, one false-positive prediction occurred on an image containing a shadow, where the model
 predicted a pothole despite the actual label being no pothole. Interestingly, the Grad-CAM 
 visualization showed that the model's attention was focused primarily on the sky rather than 
 the road surface. Another limitation is that the dataset contains only photos that are in broad 
-daylight. Some examples of these anomalies are explained further below.
+daylight. Some examples of these anomalies are discussed below.
 
 ## Dataset
 
 This project uses the MIIA Pothole Image Classification Challenge dataset,
 obtained through Kaggle.
 
-The dataset is not included in this repository. It can be accessed through
-the original [Kaggle dataset](https://www.kaggle.com/datasets/salimhammadi07/miia-pothole-image-classification-challenge).
+The dataset is not included in this repository due to its size and
+the dataset's usage and redistribution restrictions. It can be accessed through
+the [Kaggle dataset page](https://www.kaggle.com/datasets/salimhammadi07/miia-pothole-image-classification-challenge).
 
 
 ## How to run:

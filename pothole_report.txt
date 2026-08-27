@@ -1,0 +1,20 @@
+POTHOLE REPORT
+===============
+
+Status: Pothole Detected
+
+Image: all_data/aAAwuvUBxwBSvhR.JPG
+Model Confidence: 100.00%
+
+LOCATION
+--------
+Latitude: 42.485
+Longitude: -83.027
+
+DATE TAKEN
+----------
+Date unavailable
+
+NOTIFICATION
+------------
+This report represents a proof-of-concept notification that could be sent to the appropriate city department.

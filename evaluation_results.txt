@@ -1,0 +1,25 @@
+MODEL EVALUATION RESULTS
+========================
+
+Total test images: 403
+
+Accuracy:  0.9404
+Precision: 0.9799
+Recall:    0.8743
+F1 Score:  0.9241
+
+CONFUSION MATRIX
+================
+[[233   3]
+ [ 21 146]]
+
+CLASSIFICATION REPORT
+=====================
+              precision    recall  f1-score   support
+
+  No Pothole       0.92      0.99      0.95       236
+     Pothole       0.98      0.87      0.92       167
+
+    accuracy                           0.94       403
+   macro avg       0.95      0.93      0.94       403
+weighted avg       0.94      0.94      0.94       403

@@ -28,6 +28,13 @@ visualization showed that the model's attention was focused primarily on the sky
 the road surface. Another limitation is that the dataset contains only photos that are in broad 
 daylight. Some examples of these anomalies are shown below.
 
+## Dataset:
+This project uses the [MIIA Pothole Image Classification Challenge] dataset from KAGGLE.
+The dataset is not included in this repository due to its size.
+
+The dataset can be downloaded from:
+[https://www.kaggle.com/datasets/salimhammadi07/miia-pothole-image-classification-challenge]
+
 
 ## How to run:
 To run the proof-of-concept demonstration, run `main.py`. This requires the trained

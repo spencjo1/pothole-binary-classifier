@@ -20,7 +20,8 @@ An image simulating this process will be attached.
 ## Limitations:
 This model achieved **94% accuracy on the test set**. Despite the high overall accuracy,
 examining some false-negative and false-positive predictions with Grad-CAM revealed interesting
-findings. We can see that the underlying environment plays a huge factor in its decision-making. 
+findings. We can see that the underlying environment plays a huge factor in its decision-making.
+
 For example, one false-positive prediction occured on an image containing a shadow, where the model
 predicted a pothole despite the actual label being no pothole. Interestingly, the Grad-CAM 
 visualization showed that the model's attention was focused primarily on the sky rather than 
@@ -29,11 +30,18 @@ daylight. Some examples of these anomalies are shown below.
 
 
 ## How to run:
-To run this program, you must simply run `main.py`. If you want to train this model, the `train.py` has 
-commented out code with instructions on how to train the model. `evaluate.py` produces the performance
-metrics of the trained model, and `gradcam.py` takes a random image from the test dataset, copies it, 
-then overlays the Grad-CAM heatmap over the image, allowing you to seamlessly compare the original image
-to the Grad-CAM overlay side by side.
+To run the proof-of-concept demonstration, run `main.py`. This requires the trained
+model file, `best_model.pth`, which is not included in this repository due to its file size.
+
+If you want to train the model yourself, uncomment the training code in `train.py`
+and follow the instructions provided in the file. Once the model has been trained,
+the resulting `best_model.pth` can be used by `main.py`.
+
+`evaluate.py` produces the performance metrics of the trained model, and `gradcam.py`
+takes a random image from the test dataset, copies it, then overlays the Grad-CAM
+heatmap over the image, allowing you to compare the original image to the Grad-CAM
+overlay side by side.
+
 
 
 ## Results:

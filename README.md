@@ -60,7 +60,7 @@ in 'evaluation_results.txt'.
 
 
 
-## Examples
+## Example Findings
 The format for images is `(a, p)`, where `a` = actual and `p` = predicted.
 
 ### False Positive (0,1)

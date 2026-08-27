@@ -26,14 +26,15 @@ For example, one false-positive prediction occured on an image containing a shad
 predicted a pothole despite the actual label being no pothole. Interestingly, the Grad-CAM 
 visualization showed that the model's attention was focused primarily on the sky rather than 
 the road surface. Another limitation is that the dataset contains only photos that are in broad 
-daylight. Some examples of these anomalies are shown below.
+daylight. Some examples of these anomalies are explained further below.
 
-## Dataset:
-This project uses the [MIIA Pothole Image Classification Challenge] dataset from KAGGLE.
-The dataset is not included in this repository due to its size.
+## Dataset
 
-The dataset can be downloaded from:
-[https://www.kaggle.com/datasets/salimhammadi07/miia-pothole-image-classification-challenge]
+This project uses the MIIA Pothole Image Classification Challenge dataset,
+obtained through Kaggle.
+
+The dataset is not included in this repository. It can be accessed through
+the original [Kaggle dataset](https://www.kaggle.com/datasets/salimhammadi07/miia-pothole-image-classification-challenge).
 
 
 ## How to run:
@@ -56,35 +57,20 @@ The model achieved **94% accuracy on the test set**. Detailed performance metric
 in 'evaluation_results.txt'.
 
 
+
+
 ## Examples
 The format for images is `(a, p)`, where `a` = actual and `p` = predicted.
 
-
 ### False Positive (0,1)
-| Original | Grad-CAM |
-|---|---|
-| ![Original](examples/0_1/original_image.jpg) | ![Grad-CAM](examples/0_1/gradcam_result.jpg) |
-
 This false-positive example is discussed in the Limitations section above.
 
-
-
 ### False Negative (1,0)
-| Original | Grad-CAM |
-|---|---|
-| ![Original](examples/1_0/original_image_1.jpg) | ![Grad-CAM](examples/1_0/gradcam_result_1.jpg) |
-
 This image is labeled as containing a pothole (1), although the pothole
 is difficult to identify visually. Interestingly, the Grad-CAM focuses on the cracks in the road,
 suggesting that the model identified a relevant feature despite its incorrect prediction.
 
-
-
 ### True Positive (1,1)
-| Original | Grad-CAM |
-|---|---|
-| ![Original](examples/1_1/original_image_2.jpg) | ![Grad-CAM](examples/1_1/gradcam_result_2.jpg) |
-
 The model correctly identified the pothole (1), but the Grad-CAM shows
 that its attention was primarily focused on the shadow rather than the pothole itself. 
 This suggests that the model may be relying on environmental features when making its predictions.
